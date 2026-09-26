@@ -1,70 +1,124 @@
 # 🐍 Vanya OS
 
-**Vanya OS** — мой Python-десктоп с приложениями, играми и системными инструментами.
+**Vanya OS** — Python-десктоп с приложениями, играми, системными инструментами и собственным интерфейсом.
 
-## ✨ Возможности
+Проект включает классическую desktop-версию и **Vanya OS Mobile Edition** для Android + Termux.
 
-- 🖥️ Рабочий стол Vanya OS
-- 📁 Проводник
+## ✨ Возможности Vanya OS Desktop
+
+- 🖥️ Собственный рабочий стол
+- 📁 Explorer / файловый менеджер
 - 📝 Заметки
 - 🎮 Игры
 - 💻 Терминал
 - ⚙️ Настройки
 - 🔒 Экран блокировки
-- 🔎 Поиск
+- 🔍 Поиск
 - 🛠️ Системные инструменты
-- 🧩 Поддержка модов
-- 🎨 Настройка интерфейса
-- 🚀 Панель задач
-- 📦 Встроенные приложения
+- 🧩 Моды и приложения
+- 🎨 Персонализация
+- 📌 Панель задач
+- 🧰 Большой набор дополнительных функций
+
+## 📱 Vanya OS Mobile Edition
+
+Мобильная версия работает на **Android через Termux и Python**.
+
+### 🚀 Vanya OS Mobile 1.1
+
+В версии 1.1 появились:
+
+- 🎨 4 темы: Neon, Ocean, Sun и Matrix
+- 👤 Профиль пользователя
+- 🔒 PIN-код и экран блокировки
+- 🔋 Информация о батарее через Termux:API
+- 🐍 Vanya Python IDE
+- 🧩 Пользовательские Python-приложения
+- 🛒 Vanya Store
+- 📝 Улучшенные заметки
+- 🎮 Vanya Arcade
+- 🧠 Игра «Ваня Память»
+- 📁 Улучшенный файловый менеджер
+- 💻 Vanya Terminal
+- 🛠️ Информация о системе
+- 💾 Информация о диске
+- ⚙️ Сохранение настроек
+- 🧰 Список всех функций
+- ✨ Новое оформление меню
+
+### 📱 Запуск на Android
+
+Для мобильной версии нужен:
+
+- Android
+- Termux
+- Python 3
+- Для функции батареи — Termux:API
+
+После установки Python:
+
+```bash
+python3 vanya_mobile_1_1.py
+```
+
+Vanya OS Mobile хранит свои настройки и данные в:
+
+```text
+~/.vanya_mobile/
+```
+
+Пользовательские Python-приложения находятся в:
+
+```text
+~/.vanya_mobile/apps/
+```
 
 ## 🐍 Требования
 
-Для запуска нужен **Python 3.10 или новее**.
+### Desktop
 
-Скачать Python можно с официального сайта:
+- Python 3.10+
+- Windows / macOS / Linux
 
-https://www.python.org/downloads/
+### Mobile
 
-## ▶️ Запуск
+- Android
+- Termux
+- Python 3
 
-### 🪟 Windows
+## ▶️ Запуск Desktop
 
-Запусти:
+### Windows
 
 ```text
 Vanya_OS_Windows.bat
 ```
 
-Или:
+или:
 
 ```bash
 py vanya_desktop.py
 ```
 
-### 🍎 macOS
-
-Запусти:
+### macOS
 
 ```text
 Vanya_OS.command
 ```
 
-Или:
+или:
 
 ```bash
 python3 vanya_desktop.py
 ```
 
-### 🐧 Linux
+### Linux
 
-Запусти:
-
-```text
-Vanya_OS_Linux.sh
+```bash
+./Vanya_OS_Linux.sh
 ```
 
-Или:
+или:
 
 ```bash
 python3 vanya_desktop.py
@@ -77,32 +131,36 @@ Vanya OS/
 ├── vanya_desktop.py
 ├── vanya_os.py
 ├── vanya_classic.py
+├── Vanya_OS_Windows.bat
+├── Vanya_OS.command
+├── Vanya_OS_Linux.sh
 ├── wallpaper.png
 ├── desktop_icons.json
 ├── mods/
 ├── notes/
-├── packages/
 ├── users/
 ├── vanya_apps/
-└── eaglercraft/
+├── eaglercraft/
+└── Mobile/
+    └── vanya_mobile_1_1.py
 ```
 
-## 🎮 Eaglercraft
+## 🌐 Eaglercraft
 
-В GitHub-версии настоящий большой HTML-файл Eaglercraft не включён из-за ограничения размера файлов GitHub.
+Большой HTML-файл Eaglercraft не включён в публичную GitHub-версию из-за ограничения размера файлов GitHub.
 
-В папке `eaglercraft/` находится небольшая заглушка и README с информацией о стороннем контенте.
+В папке `eaglercraft/` находится информация о том, куда можно поместить соответствующий HTML-файл.
+
+Учитывайте лицензии и права авторов стороннего контента.
 
 ## 📜 Лицензия
 
-Vanya OS распространяется по лицензии **MIT**.
+Проект распространяется под **MIT License**.
 
-Полный текст лицензии находится в файле [`LICENSE`](LICENSE).
+Автор: **Vanya** ❤️
 
-## 👨‍💻 Автор
+---
 
-**Vanya**
+⭐ Если тебе нравится Vanya OS — поставь звезду репозиторию!
 
-Vanya OS — мой проект, который постепенно развивается и получает новые функции.
-
-⭐ Если тебе нравится Vanya OS, можешь поставить Star репозиторию!
+🐍 **Vanya OS — маленькая ОС, созданная на Python.**
